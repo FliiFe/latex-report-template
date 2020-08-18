@@ -1,0 +1,60 @@
+\documentclass{report}
+\newif\ifsolo
+
+\solofalse
+
+\input{src/preamble.tex}
+
+\begin{document}
+
+\pagestyle{empty}
+\begin{center}
+
+    ~ \vfill
+
+    \textsc{\LARGE Establishment}\\[1.5cm]
+    \textsc{\Large Cursus}\\[0.5cm]
+
+    \rule{\linewidth}{0.5mm} \\[0.4cm]
+    {\huge \bfseries Title }\\[0.1cm]
+    \rule{\linewidth}{0.5mm} \\[0.4cm]
+    \textsc{\large Subtitle}\\[1.5cm]
+
+    \begin{minipage}{0.4\textwidth}
+        \begin{flushleft} \large
+            \emph{Left}\\
+            John \textsc{Doe}
+        \end{flushleft}
+        \end{minipage}\hspace{1cm}\begin{minipage}{0.4\textwidth}
+        \begin{flushright} \large
+            \emph{Right} \\
+            Jane \textsc{Doe}
+        \end{flushright}
+    \end{minipage}\\[2cm]
+    \vfill
+    \includegraphics[height=5cm]{logo.png}\\[1cm]
+    \vfill
+    {\large 2019-2020}\\
+\end{center}
+\newpage
+
+\dominitoc
+\tableofcontents
+\faketableofcontents
+
+\begin{minipage}{\textwidth}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{minipage}
+
+\newpage
+
+\pagestyle{main}
+
+\input{src/chapterlist.tex}
+
+\newpage
+\pagestyle{empty}
+
+\printindex
+
+\end{document}
